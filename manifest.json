@@ -1,0 +1,21 @@
+{
+	"manifest_version": 3,
+	"name": " HelpMeOut Versio",
+	"description": "record a user's screen and send it to an endpoint",
+	"icons": {
+		"128": "./hmologo.png"
+	},
+	"version": "1.0.0",
+	"background": {
+		"service_worker": "background.js"
+	},
+	"action": {
+		"default_popup": "popup.html",
+		"default_icon": {
+			"48": "./hmologo.png"
+		}
+	},
+
+	"permissions": ["scripting", "tabs", "activeTab"],
+	"host_permissions": ["http://*/*", "https://*/*"]
+}
